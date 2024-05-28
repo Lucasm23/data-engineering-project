@@ -185,6 +185,8 @@ networks:
 
 To fully connect, docker compose in this case your host env should be postgres and not localhost.
 
+Here we can see the docker-compose up and running ->
+
 ![image](https://github.com/Lucasm23/data-engineering-project/assets/83221259/bc6d0dbb-8f88-45c7-8df6-1cfe91f61846)
 
 
