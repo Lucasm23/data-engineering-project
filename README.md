@@ -158,7 +158,7 @@ At this point the script it's working correctly as intended, now we can focus on
 
 In this case, we dont need more than two services, one for postgres and the other to run the script:
 
-`version: '3.8'
+version: '3.8'
 
 services:
   postgres:
@@ -183,7 +183,7 @@ services:
       - my-network
 
 networks:
-  my-network:`
+  my-network:
 
 
 To fully connect, docker compose in this case your host env should be postgres and not localhost.
