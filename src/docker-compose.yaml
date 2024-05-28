@@ -1,0 +1,26 @@
+version: '3.8'
+
+services:
+  postgres:
+    image: postgres:latest
+    container_name: postgres-db
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    ports:
+      - "5432:5432"
+    networks:
+      - my-network
+
+  your-service:
+    build: .
+    env_file:
+      - .env
+    depends_on:
+      - postgres
+    networks:
+      - my-network
+
+networks:
+  my-network:
