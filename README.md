@@ -75,9 +75,9 @@ try:
 except psycopg2.errors.DuplicateDatabase:
     print(f"Database {db_name} already exists.")
 cur.close()
-conn.close()
+conn.close()`
 
-conn = psycopg2.connect(
+`conn = psycopg2.connect(
     dbname=db_name,
     user=db_user,
     password=db_password,
