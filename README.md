@@ -38,9 +38,9 @@ Next, we loop through the remaining pages and print the total size of the list w
             record["date"],
             record["value"]
         )
-        all_records.append(entry)
+        all_records.append(entry)`
 
-print(f"Total records fetched: {len(all_records)}")`
+`print(f"Total records fetched: {len(all_records)}")`
 
 At this point, we create two lists to later construct the tables for countries and GDP:
 
